@@ -1,48 +1,104 @@
-html {
-  background-color: #fff2e6;
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../assets/fonts/Nunito_Sans/NunitoSans-Light.ttf");
 }
+
+@font-face {
+  font-family: "Nunito Sans Regular";
+  src: url("../assets/fonts/Nunito_Sans/NunitoSans-Regular.ttf");
+}
+
+* {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #e6e7ee;
+}
+
+/********** Cards Product **********/
+
 .products {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 50%;
-  margin: auto;
+  justify-content: center;
+  margin: 50px;
 }
 
 .product {
   display: inline-block;
   position: relative;
   width: 20%;
-  border: solid 5px white;
-  margin: 10px;
+  border: solid 2px #d1d9e6;
+  margin: 20px;
   justify-content: center;
   text-align: center;
-  border-radius: 20px;
-  background: #fff2e6;
-  box-shadow: 15px 15px 30px #bfb6ad, -15px -15px 30px #ffffff;
+  border-radius: 10px;
+  background: #e6e7ee;
+  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff !important;
 }
 
-img {
-  width: 40%;
+#img_chaussete {
+  width: 50%;
   margin: 5px;
 }
 
-.text {
+.h5 {
+  font-family: "Nunito Sans Regular";
+  font-size: 1.25rem;
+  line-height: 1.3;
+  color: #31344b;
+}
+
+.card-footer {
+  border-top: solid 1px #d1d9e6;
+  padding: 1.25rem 1.5rem;
+  text-align: left;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.price_product {
   display: flex;
-  justify-content: center;
-  align-content: center;
-  font-family: Roboto, Helvetica, sans-serif;
-  font-size: 100%;
-  color: #534a92;
-  margin: 5px;
-}
-
-.title {
-  font-weight: 600;
-}
-
-.price {
+  justify-content: space-between;
+  align-items: center;
   font-weight: 200;
+  margin-top: 15px;
+}
+
+/********** Buttons **********/
+.btn {
+  position: relative;
+  transition: all 0.2s ease;
+  letter-spacing: 0.025em;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 0.55rem;
+  border: solid 0.5px #d1d9e6;
+  box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+  padding: 0.25rem 0.45rem;
+}
+
+.btn-xs {
+  line-height: 1.8;
+  font-size: 0.75rem !important;
+}
+
+.btn-primary {
+  color: #31344b;
+  background-color: #e6e7ee;
+}
+
+.btn:hover {
+  border-radius: 5px;
+  background: #e6e7ee;
+  box-shadow: inset 2.5px 2.5px 5px #a1a2a7, inset -2.5px -2.5px 5px #ffffff;
 }
 
 button {
@@ -56,3 +112,89 @@ button {
   top: 0;
   right: 10px;
 }
+
+/********** Nav Bar Menu **********/
+
+ul {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  overflow: hidden;
+  background: #e6e7ee;
+  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff !important;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  z-index: 1;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #31344b !important;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+#logo {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #31344b;
+  justify-content: center;
+  align-items: center;
+}
+
+#img_logo {
+  width: 50px;
+}
+
+#link_center {
+  display: block;
+  margin-right: 100px;
+}
+
+.price {
+  margin-right: 15px;
+}
+
+#total {
+  font-weight: bold;
+  margin-right: 15px;
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: #44476a;
+  line-height: 1.6;
+}
+
+#panier {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #44476a;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.275rem 0.425rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1;
+  border: 0.0625rem solid #d1d9e6;
+  border-radius: 0.55rem;
+  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+  background-color: transparent;
+  color: #18634b;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
