@@ -8,6 +8,12 @@
   src: url("../assets/fonts/Nunito_Sans/NunitoSans-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Nunito Sans Bold";
+  src: url("../assets/fonts/Nunito_Sans/NunitoSans-Bold.ttf");
+}
+
+
 * {
   font-family: "Nunito Sans", sans-serif;
   margin: 0;
@@ -19,6 +25,25 @@
 html {
   background-color: #e6e7ee;
 }
+
+/********** En tete ***********/
+.articles {
+  display: block;
+  position: absolute;
+}
+
+h1 {
+  font-size: 42px;
+  font-family: "Nunito Sans Bold";
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 100px 50px;
+}
+
 
 /********** Cards Product **********/
 
