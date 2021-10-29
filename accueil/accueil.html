@@ -33,12 +33,41 @@
 
     <div class="head">
         <h1>SHOP</h1>
-        <a class="btn btn-primary" href="#" title="New product">
-            <span class="fa fa-cart-plus mr-2"></span> New Product
+        <a class="btn btn-medium btn-primary btn-action" id="open-modal" href="#" title="New product">
+            <span class="fa fa-plus mr-2"></span> New product
         </a>
     </div>
-    
+
     <div class="products" id="app"></div>
+
+    <div id="product-modal" class="modal">
+        <div id="modal-content">
+            <div id="modal-header">
+                <h2>Modal new socket</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <form>
+                <div id="modal-body">
+                    <div class="form-group">
+                        <label for="title">Dénomination article</label>
+                        <input type="text" name="title" id="title" placeholder="Entrer le titre de l'article">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Prix de l'article</label>
+                        <input type="number" name="price" id="price" value="5">
+                    </div>
+                    <div class="form-group">
+                        <label for="image">Importer une image</label>
+                        <input type="file" name="image" id="image">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-medium btn-cancel"  value="Annuler">
+                    <input type="button" class="btn btn-medium btn-submit" onclick="addSocket()" value="Ajouter">
+                </div>
+            </form>
+        </div>
+    </div>
 
     <script src="accueil_main.js"></script>
 </body>
