@@ -25,7 +25,7 @@
             <div class="login">
                 <h1 style="color:black; font-size: 3rem;">Create Account</h1>
 
-                <div class="icons" >
+                <div class="icons">
                     <i class="fa fa-facebook-f"></i>
                     <i class="fa fa-linkedin"></i>
                     <i class="fa fa-twitter"></i>
@@ -34,14 +34,51 @@
                 <h4>or use email for registration</h4>
 
                 <div class="formulaire">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Password">
-                    <input type="button" class="btnUp" href="#" title="Add to cart" value="SIGN UP">
+                    <form action="#">
+                        <!-- Form -->
+                        <div class="form-group">
+                            <div class="input-group-text"><span class="fa fa-user"></span></div>
+                            <input class="form-control" id="inputName" placeholder="John" type="text" aria-label="name"
+                                value="admin">
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group-text"><span class="fa fa-envelope"></span></div>
+                            <input class="form-control" id="inputEmail" placeholder="example@company.com" type="text"
+                                aria-label="email adress" >
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group-text"><span class="fa fa-unlock-alt"></span></div>
+                            <input class="form-control" id="inputPassword" placeholder="Password" type="password"
+                                aria-label="Password" value="admin">
+                            <button type="button" class="btn-eye" onclick="showPassword()"><span class="fa fa-eye"></span></button>
+                        </div>
+                        <button class="btn-randomPass" onclick="genererPassword()">Generate random password</button>
+                        <input type="button" class="btnUp" id="btnUp" onclick="authentifier()" title="Sign Up" value="SIGN UP">
+                    </form>
                 </div>
             </div>
         </div>
+        <!-- #region Notification Success AND Failed-->
+        <div class="notification notification-success" id="notifSuccess-content">
+                <span class="alert-inner--icon"><span class="fa fa-check"></span></span>
+                <span class="alert-inner--text"><strong>Well done!</strong> You successfully Login on ShopSette.</span>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+        </div>
+
+        <div class="notification notification-failed" id="notifFail-content">
+            <span class="alert-inner--icon"><span class="fa fa-times"></span></span>
+            <span class="alert-inner--text"><strong>Fail Authentification!</strong> Please try verifed Name or/and Password.</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <!-- #endregion -->
     </div>
+
+
+    <script src="login_main.js"></script>
 </body>
 
 </html>
