@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -35,7 +35,13 @@
     <div class="container">
         <div class="rectLeft">
             <!-- image de la chaussette en grand-->
+            <img id="img_grd" src="../assets/images/chaussettes/pngs/avocat.png">
             <!-- petite image de la chaussette choisie + 2 autres images de chaussettes-->
+            <div class="ptt_img">
+                <img id="img_ptt" src="../assets/images/chaussettes/pngs/avocat.png">
+                <img id="img_ptt" src="../assets/images/chaussettes/pngs/cochons.png">
+                <img id="img_ptt" src="../assets/images/chaussettes/pngs/foot.png">
+            </div>
         </div>
         <div class="rectRight">
             <!--Petit, aligne gauche et en gris-->
@@ -54,43 +60,25 @@
                     <option value="M">M</option>
                     <option value="L">L</option>
                 </select>
-                <span class="quantite">
-                    <span class="next-input-group">
-                        <span class="next-input-group next-before">
-                            <button type="button" class="next-btn next-medium next-btn-normal" role="buttom" disabled>
-                                <i class="next-icon next-icon-minus next-xs next-btn-icon next-icon-alone">-</i>
-                            </button>
-                        </span>
-                        <span class="next-input next-medium next-input-group-auto-width"><input aria-valuemax="500" aria-valuemin="1" height="100%" autocomplete="off" value="1"></span>
-                        <span class="next-input-group-addon next-after">
-                            <button type="button" class="next-btn next-medium next-btn-normal" role="buttom">
-                                <i class="next-icon next-icon-add next-xs next-btn-icon next-icon-alone">+</i>
-                            </button>
-                        </span>
-                    </span>
+                <div class="quantite">            
+                    <button type="button" class="btn" role="buttom" disabled>-</button>
+                    <input type="number" aria-valuemin="1" height="100%" autocomplete="off" value="1">
+                    <button type="button" class="btn" role="buttom">+</button>
+                </div>        
 
-                </span>
-                <!--Bouton ajouter au panier-->
-                <!--Grand, gras, aligne gauche et noir-->
-                <h3>Product Detail </h3>
-                <!--Moyen aligne gauche et noir-->
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, totam magnam officiis,
-                    accusamus quae impedit dicta quam inventore, repudiandae perspiciatis autem minima possimus. Omnis
-                    suscipit quae aliquam nobis voluptate delectus?
-                    Laboriosam neque eos quaerat nemo adipisci ut rem dignissimos amet, a molestias, excepturi fugiat
-                    quisquam assumenda? Ipsum id rerum eos adipisci, nam illo aliquid temporibus aut animi eius alias
-                    doloremque.
-                    Ipsum ullam nam minima sunt nesciunt facere aliquid quasi quo dolore officiis quia, magnam et eius
-                    quos deleniti modi accusamus provident nemo, architecto, reiciendis dicta exercitationem repellendus
-                    distinctio? Sunt, beatae.
-                    Similique atque nulla nostrum odit eius beatae et rerum praesentium minus sequi, veniam sed sunt
-                    ipsum? Ad consequuntur minima, maiores voluptatum illum praesentium reiciendis accusantium porro
-                    iusto non animi provident?
-                    Ullam ea maxime aliquid vero nam. Quasi voluptates nobis, fuga blanditiis rerum animi ea commodi
-                    nulla velit aperiam totam porro quas vel, soluta quos dignissimos dicta, illum rem. In, qui!
-                    Aspernatur non sit unde reprehenderit voluptas assumenda quasi temporibus asperiores, quae alias
-                    modi quo itaque suscipit. Nam debitis quo possimus in alias beatae placeat cum, explicabo vitae non
-                    accusamus est!</h4>
+                    <!--Bouton ajouter au panier-->
+                    <button type="button" class="btn"><i class="fa fa-cart-plus"></i>Ajouter au panier</button>
+                    <!--Grand, gras, aligne gauche et noir-->
+                    <h3>Product Detail </h3>
+                    <!--Moyen aligne gauche et noir-->
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, totam magnam officiis,
+                        accusamus quae impedit dicta quam inventore, repudiandae perspiciatis autem minima possimus.
+                        Omnis Ullam ea maxime aliquid vero nam. Quasi voluptates nobis, fuga blanditiis rerum animi ea commodi
+                        nulla velit aperiam totam porro quas vel, soluta quos dignissimos dicta, illum rem. In, qui!
+                        Aspernatur non sit unde reprehenderit voluptas assumenda quasi temporibus asperiores, quae alias
+                        modi quo itaque suscipit. Nam debitis quo possimus in alias beatae placeat cum, explicabo vitae
+                        non
+                        accusamus est!</h4>
         </div>
     </div>
 </body>
